@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewInvoice renders the UI as expected 1`] = `
+<div
+  className="NewInvoice"
+>
+  <div
+    className="NewInvoice"
+  >
+    <h2>
+      Create New Invoice
+    </h2>
+    <div
+      className="invoice-form"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <h4 />
+        <p>
+          Date:
+           
+          <input
+            aria-label="date"
+            name="date"
+            onChange={[Function]}
+            required={true}
+            type="date"
+          />
+        </p>
+        <p>
+          Client:
+          <input
+            aria-label="client"
+            name="client"
+            onChange={[Function]}
+            required={true}
+            type="text"
+          />
+        </p>
+        <input
+          aria-label="next"
+          className="invoive-btn"
+          type="submit"
+          value="Next"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NewInvoice renders the UI as expected with no unreads 1`] = `
+<div
+  className="NewInvoice"
+>
+  <div
+    className="NewInvoice"
+  >
+    <h2>
+      Create New Invoice
+    </h2>
+    <div
+      className="invoice-form"
+    >
+      <form
+        onSubmit={[Function]}
+      >
+        <h4 />
+        <p>
+          Date:
+           
+          <input
+            aria-label="date"
+            name="date"
+            onChange={[Function]}
+            required={true}
+            type="date"
+          />
+        </p>
+        <p>
+          Client:
+          <input
+            aria-label="client"
+            name="client"
+            onChange={[Function]}
+            required={true}
+            type="text"
+          />
+        </p>
+        <input
+          aria-label="next"
+          className="invoive-btn"
+          type="submit"
+          value="Next"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;

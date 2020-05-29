@@ -1,0 +1,90 @@
+.Dashboard {
+  background-color: #282c34a8;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+form {
+  margin: 10px;
+}
+h2 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.Filter {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.invoice-ls {
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(118, 83, 151) 75%,
+    rgba(48, 45, 51, 0.685) 100%
+  );
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.1s;
+}
+.invoice-ls:hover {
+  transform: scale(1.04);
+  box-shadow: 2px 2px 5px rgb(59, 111, 255);
+}
+
+.delete {
+  float: right;
+  margin-right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.delete:hover {
+  background-color: rgb(59, 111, 255);
+  box-shadow: 2px 2px 5px black;
+}
+.confirm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+.popup {
+  background-color: #282c34;
+  width: 35%;
+  height: 35vh;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px black;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.623);
+}
+.submit {
+  border-radius: 5px;
+  margin: 5px;
+}
+.submit:hover {
+  color: red;
+  box-shadow: 2px 2px 5px black;
+}

@@ -1,0 +1,42 @@
+.AddInvoice {
+  background-color: #282c34a8;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.invoice-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+.invoive-btn {
+  margin: 20px;
+  background-color: rgb(59, 111, 255);
+}
+.invoive-btn:disabled {
+  background-color: grey;
+}
+.invoive-btn:disabled:hover {
+  background-color: grey;
+  box-shadow: none;
+}
+.invoive-btn:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+.ReviewInvoice {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+}
+
+.title {
+  font-weight: bold;
+}
+.total {
+  font-weight: bold;
+}
