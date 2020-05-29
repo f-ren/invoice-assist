@@ -1,3 +1,5 @@
+Title: Invoice-Assist
+
 Overview:
 Invoice-Assist is a simple way for small businesses to create invoices and track sales.
 
