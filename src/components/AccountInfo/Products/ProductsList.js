@@ -71,7 +71,9 @@ export default class DescriptionList extends Component {
             {this.state.add === true ? this.renderAddDescript() : null}
           </div>
         </div>
-        <button onClick={(e) => this.handleAddClick(e)}>Add Description</button>
+        <button className="add-btn" onClick={(e) => this.handleAddClick(e)}>
+          Add Description
+        </button>
       </div>
     );
   }

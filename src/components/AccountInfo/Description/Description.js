@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import InvoiceContext from '../../../context/InvoiceAssist';
 import InvoiceApiService from '../../../services/invoice-api-service';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 export default class Description extends Component {
   static contextType = InvoiceContext;
   handleSubmit = (e) => {
     const { descript } = this.props;
     e.preventDefault();
+
     InvoiceApiService.deleteProduct(descript.id)
       .then((res) => {
         const filterProducts = this.context.products.filter(
@@ -26,7 +29,9 @@ export default class Description extends Component {
             {' '}
             Sale Price: ${descript.sale_price}
           </div>
-          <button onClick={(e) => this.handleSubmit(e)}>Delete</button>
+          <button className="delete-btn" onClick={(e) => this.handleSubmit(e)}>
+            <FontAwesomeIcon icon={faTrash} />
+          </button>
         </li>
       </div>
     );

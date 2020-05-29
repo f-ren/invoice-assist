@@ -52,7 +52,7 @@ export default class NewInvoiceForm extends Component {
   };
 
   render() {
-    const { info, products } = this.context;
+    const { user, products } = this.context;
     return this.state.review === false ? (
       <div className="NewInvoice">
         {this.state.invoiceId ? (
@@ -126,7 +126,7 @@ export default class NewInvoiceForm extends Component {
             <h2>Create New Invoice</h2>
             <div className="invoice-form">
               <form onSubmit={this.handleSubmit}>
-                <h4>{info.company_name}</h4>
+                <h4>{user.company_name}</h4>
                 <p>
                   Date:{' '}
                   <input

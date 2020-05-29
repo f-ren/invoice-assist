@@ -4,3 +4,10 @@
   padding: 20px;
   text-align: center;
 }
+.add-btn {
+  margin: 20px;
+  background-color: rgb(59, 111, 255);
+}
+.delete-btn {
+  background-color: rgb(59, 111, 255);
+}

@@ -23,13 +23,13 @@ export default class ReviewInvoice extends Component {
     this.props.history.push('/dashboard');
   };
   render() {
-    const { info, products } = this.context;
+    const { user, products } = this.context;
     const { items, client, back, date, total } = this.props;
 
     return (
       <div className="ReviewInvoice">
         <h2>Invoice</h2>
-        <h4>{info.company_name}</h4>
+        <h4>{user.company_name}</h4>
         <p className="title">
           Client: {client} - {date}
         </p>
