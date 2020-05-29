@@ -9,7 +9,7 @@ export default class Description extends Component {
   handleSubmit = (e) => {
     const { descript } = this.props;
     e.preventDefault();
-
+    console.log(descript.id);
     InvoiceApiService.deleteProduct(descript.id)
       .then((res) => {
         const filterProducts = this.context.products.filter(

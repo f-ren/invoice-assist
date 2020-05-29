@@ -15,3 +15,6 @@ Allow user to edit products
 Allow user to update user information
 
 ![](images/Invoice-Assist.png)
+
+Technologies:
+Html Css Javascript React SQL

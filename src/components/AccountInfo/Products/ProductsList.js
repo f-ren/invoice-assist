@@ -56,9 +56,7 @@ export default class DescriptionList extends Component {
   handleAddSubmit = (e) => {
     e.preventDefault();
     InvoiceApiService.postProduct(this.state.descr, this.state.sale_price)
-      .then((res) =>
-        this.context.setProducts({ ...this.context.products, res })
-      )
+      .then(this.context.addProducts)
       .catch(this.context.setError);
   };
   render() {
