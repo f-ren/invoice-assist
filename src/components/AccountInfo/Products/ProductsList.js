@@ -15,7 +15,6 @@ export default class DescriptionList extends Component {
 
   submitDescript() {
     const { descr, sale_price } = this.state;
-    console.log(descr, sale_price);
     InvoiceApiService.postProduct(descr, sale_price).catch(
       this.context.setError
     );

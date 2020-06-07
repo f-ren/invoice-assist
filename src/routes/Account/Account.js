@@ -17,7 +17,6 @@ export default class Account extends Component {
       .catch(this.context.setError);
   }
   render() {
-    console.log(this.context.products);
     return (
       <div className="Account">
         <Info />
