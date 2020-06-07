@@ -71,7 +71,7 @@ export default class LoginForm extends Component {
           <input
             aria-label="Login button"
             type="submit"
-            className="login-btn"
+            className="button"
             value="Login"
           />
         </form>
@@ -79,7 +79,7 @@ export default class LoginForm extends Component {
           <input
             aria-label="Demo button"
             type="submit"
-            className="login-btn"
+            className="button primary"
             value="Demo"
           />
         </form>
