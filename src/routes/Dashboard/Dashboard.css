@@ -1,5 +1,5 @@
 .Dashboard {
-  background-color: #282c34a8;
+  background-color: #9c9c9c;
   margin-top: 20px;
   padding: 20px;
   text-align: center;
@@ -20,13 +20,11 @@ h2 {
 .invoice-ls {
   margin: 10px;
   padding: 10px;
-  background: linear-gradient(
-    to bottom,
-    rgb(118, 83, 151) 75%,
-    rgba(48, 45, 51, 0.685) 100%
-  );
+  background-color: #e2e2e2;
+  color: #333;
+  border-radius: 15px;
+  border-bottom: 3px solid #999;
   cursor: pointer;
-  color: black;
   font-weight: bold;
   border-radius: 25px;
   display: flex;
@@ -35,20 +33,21 @@ h2 {
 }
 .invoice-ls:hover {
   transform: scale(1.04);
-  box-shadow: 2px 2px 5px rgb(59, 111, 255);
+  box-shadow: 2px 2px 5px rgb(55, 48, 61);
 }
 
-.delete {
-  float: right;
+.delete-btn {
   margin-right: 10px;
   padding: 10px;
   background: none;
   border: none;
   cursor: pointer;
 }
-.delete:hover {
-  background-color: rgb(59, 111, 255);
-  box-shadow: 2px 2px 5px black;
+.delete-btn:hover {
+  color: rgba(170, 81, 253);
+}
+.Dashboard .delete-btn {
+  float: right;
 }
 .confirm {
   position: absolute;

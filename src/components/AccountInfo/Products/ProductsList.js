@@ -13,6 +13,14 @@ export default class DescriptionList extends Component {
   };
   static contextType = InvoiceContext;
 
+  submitDescript() {
+    const { descr, sale_price } = this.state;
+    console.log(descr, sale_price);
+    InvoiceApiService.postProduct(descr, sale_price).catch(
+      this.context.setError
+    );
+  }
+
   renderDescript() {
     const { products } = this.context;
     return products.map((descript) => (
@@ -40,10 +48,18 @@ export default class DescriptionList extends Component {
             placeholder="Sales price"
           />
         </p>
-        <button onSubmit={(e) => this.context.addDescript} type="submit">
+        <button
+          onClick={(e) => this.submitDescript(e)}
+          type="submit"
+          className="button"
+        >
           Add
         </button>
-        <button onClick={(e) => this.setState({ add: false })} type="submit">
+        <button
+          onClick={(e) => this.setState({ add: false })}
+          type="submit"
+          className="button"
+        >
           Cancel
         </button>
       </form>
@@ -69,7 +85,10 @@ export default class DescriptionList extends Component {
             {this.state.add === true ? this.renderAddDescript() : null}
           </div>
         </div>
-        <button className="add-btn" onClick={(e) => this.handleAddClick(e)}>
+        <button
+          className="button primary"
+          onClick={(e) => this.handleAddClick(e)}
+        >
           Add Description
         </button>
       </div>

@@ -17,7 +17,10 @@ export default class InvoiceList extends Component {
   render() {
     return (
       <section className="InvoiceList">
-        <Link to="/add-invoice"> New Invoice</Link>
+        <Link to="/add-invoice" className="button primary">
+          {' '}
+          New Invoice
+        </Link>
         {this.context.invoices.length === 0 ? (
           <div className="empty">
             <p>No Invoices created!</p>

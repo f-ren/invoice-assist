@@ -1,13 +1,6 @@
 .Account {
-  background-color: #282c34a8;
+  background-color: #9e9e9e;
   margin-top: 20px;
   padding: 20px;
   text-align: center;
-}
-.add-btn {
-  margin: 20px;
-  background-color: rgb(59, 111, 255);
-}
-.delete-btn {
-  background-color: rgb(59, 111, 255);
 }

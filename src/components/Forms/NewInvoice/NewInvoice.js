@@ -66,7 +66,7 @@ export default class NewInvoiceForm extends Component {
                     {product.descr} - ${product.sale_price} - {item.qty}{' '}
                     <input
                       aria-label="Remove Item"
-                      className="invoive-btn"
+                      className="button"
                       type="submit"
                       value="remove"
                       onClick={() => this.removeItem(i)}
@@ -105,7 +105,7 @@ export default class NewInvoiceForm extends Component {
 
               <input
                 aria-label="add-item"
-                className="invoive-btn"
+                className="button noHover"
                 type="submit"
                 disabled={this.state.product === 0 || this.state.qty === 0}
                 value="Add Item"
@@ -114,7 +114,7 @@ export default class NewInvoiceForm extends Component {
             <form onSubmit={this.handleReview}>
               <input
                 aria-label="review"
-                className="invoive-btn"
+                className="button primary noHover"
                 type="submit"
                 disabled={this.state.items.length === 0}
                 value="Review"
@@ -149,7 +149,7 @@ export default class NewInvoiceForm extends Component {
                 </p>
                 <input
                   aria-label="next"
-                  className="invoive-btn"
+                  className="button primary"
                   type="submit"
                   value="Next"
                 />

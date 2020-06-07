@@ -88,7 +88,7 @@ export default class Invoices extends Component {
                 {this.populateInvoice()}
                 <button
                   aria-label="Delete"
-                  className="delete"
+                  className="delete-btn"
                   type="submit"
                   onClick={(e) => {
                     this.toggleInvoice();

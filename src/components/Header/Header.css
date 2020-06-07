@@ -8,12 +8,9 @@
 .Header a {
   text-decoration: none;
   padding: 7px;
-  color: rgba(170, 81, 253, 0.671);
+  color: rgba(170, 81, 253);
 }
-.Header a:hover {
-  box-shadow: 2px 2px 5px rgb(59, 111, 255);
-  border-radius: 15px;
-}
+
 .login-nav {
   display: flex;
   align-items: center;
@@ -21,4 +18,5 @@
 }
 .login-nav a {
   padding: 5px 15px;
+  color: #e2e2e2;
 }

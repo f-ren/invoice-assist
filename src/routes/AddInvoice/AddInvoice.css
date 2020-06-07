@@ -11,19 +11,10 @@
   text-align: center;
 }
 
-.invoive-btn {
-  margin: 20px;
-  background-color: rgb(59, 111, 255);
-}
-.invoive-btn:disabled {
+.noHover:disabled {
+  pointer-events: none;
   background-color: grey;
-}
-.invoive-btn:disabled:hover {
-  background-color: grey;
-  box-shadow: none;
-}
-.invoive-btn:hover {
-  box-shadow: 2px 2px 5px black;
+  border: none;
 }
 
 .ReviewInvoice {

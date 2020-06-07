@@ -92,9 +92,9 @@ export default class Info extends Component {
               <li>Email: {user.email}</li>
               <li>Company: {user.company_name}</li>
             </ul>
-            {/* <button onClick={(e) => this.handleEdit(e)} className="edit-btn">
+            <button onClick={(e) => this.handleEdit(e)} className="edit-btn">
               Edit
-            </button> */}
+            </button>
           </div>
         )}
       </div>
