@@ -23,6 +23,7 @@
 
 .button {
   text-decoration: none;
+  border: none;
   background-color: #e2e2e2;
   color: #333;
   font-weight: 700;
