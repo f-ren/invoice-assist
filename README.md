@@ -9,10 +9,10 @@ Users can delete invoices.
 Users can create new products to included in future invoices.
 Users can delete old products no longer used.
 
-![](images/View1.png)
-![](images/View2.png)
-![](images/View3.png)
-![](images/View4.png)
+![image](C:\Users\renfi\projects\Apps\invoice-assist\invoice-client\invoice-assist\public\images\View1.png)
+![image](C:\Users\renfi\projects\Apps\invoice-assist\invoice-client\invoice-assist\public\images\View2.png)
+![image](C:\Users\renfi\projects\Apps\invoice-assist\invoice-client\invoice-assist\public\images\View3.png)
+![image](C:\Users\renfi\projects\Apps\invoice-assist\invoice-client\invoice-assist\public\images\View4.png)
 
 Technologies:
 Html Css Javascript React SQL
