@@ -8,7 +8,14 @@ export default class Home extends Component {
       <div className="HomePage">
         <div className="wrapper">
           <h2>Welcome to Invoice Assist</h2>
-          <p>Helping small businesses stay organized</p>
+          <p>
+            Our goal is to help small businesses stay organized by providing a
+            simple platform for invoice entry.{' '}
+            <p>
+              Easily keep track of products or services provided to your
+              clients.
+            </p>
+          </p>
           <p>
             <Link to="/signup" className="button primary">
               Create a New Account

@@ -84,7 +84,9 @@ export default class DescriptionList extends Component {
             {this.state.add === true ? this.renderAddDescript() : null}
           </div>
         </div>
-        {this.context.error && <div className="error">{this.context.error}</div>
+        {this.context.error && (
+          <div className="error">{this.context.error}</div>
+        )}
         <button
           className="button primary"
           onClick={(e) => this.handleAddClick(e)}
